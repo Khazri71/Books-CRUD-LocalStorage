@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Books Notes With HTML5 , CSS3 and JS using LoacalStorage"
+    />
+    <meta
+      name="keywords"
+      content="Books, Notes , HTML5 , CSS3 , JS , LoacalStorage , FontAwesome , SweetAlert"
+    />
+    <meta name="author" content="Khazri" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Books Notes</title>
+    <!--CDN Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--==========Start Books Notes==========-->
+    <main>
+      <section class="books-notes">
+        <h1>books</h1>
+        <section class="part-1">
+          <div class="enter-book-info">
+            <input type="text" placeholder="Book Name" />
+          </div>
+          <div class="buttons-control">
+            <button class="search" title="Search Book ">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="add" title="Add Book ">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="delete" title="Delete Book ">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </section>
+        <section class="part-2">
+          <button title="Show All Books ">
+            <i class="fa-solid fa-square-poll-horizontal"></i>
+          </button>
+          <button title="Delete All Books ">
+            <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <div class="result-message">
+            <p>Message Here</p>
+          </div>
+          <div class="books"></div>
+        </section>
+      </section>
+    </main>
+    <!--==========End Books Notes==========-->
+    <!--Link JS-->
+    <script src="main.js"></script>
+  </body>
+</html>
