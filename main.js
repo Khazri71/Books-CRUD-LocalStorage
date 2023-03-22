@@ -16,9 +16,6 @@ let theAllButtonsControl = document.querySelectorAll(
   (theButtonShowAll = document.querySelector(
     "main .books-notes .part-2 button:first-child "
   )),
-  (theButtonDeleteAll = document.querySelector(
-    "main .books-notes .part-2 button:nth-child(2) "
-  )),
   (theNotes = document.querySelector(
     "main .books-notes .part-1 .enter-book-info div textarea"
   )),
@@ -94,27 +91,6 @@ function deleteBook() {
     EmptyInputMessage();
   }
 }
-
-function DeleteAllBooks() {
-  if (localStorage.length != 0) {
-    //Delete All Books From LocalStorage
-    localStorage.clear();
-  } else {
-    theAllBooks.innerHTML = `
-    <div class="book">
-      <p>
-      All Books Are Deleted!
-      </p>
-    </div> <br/>`;
-  }
-}
-
-function DeleteAllAction() {
-  theButtonDeleteAll.addEventListener("click", () => {
-    DeleteAllBooks();
-  });
-}
-DeleteAllAction();
 
 function searchExistBook() {
   theResultBlock.style.display = "block";
